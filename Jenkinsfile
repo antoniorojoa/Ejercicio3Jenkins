@@ -5,7 +5,7 @@ pipeline {
         stage("Java Version") {
             steps {
                 script {
-                    echo "Versión de Java"
+                    echo "Version de Java"
                     bat "java -version"
                 }
             }
@@ -14,7 +14,7 @@ pipeline {
         stage("Git Version") {
             steps {
                 script {
-                    echo "Versión de Git"
+                    echo "Version de Git"
                     bat "git --version"
                 }
             }
