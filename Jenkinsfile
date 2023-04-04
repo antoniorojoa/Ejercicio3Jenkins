@@ -5,7 +5,7 @@ pipeline {
         stage("Java Version") {
             steps {
                 script {
-                    java -version
+                    cmd "java -version"
                 }
             }
         }
@@ -13,7 +13,7 @@ pipeline {
         stage("Git Version") {
             steps {
                 script {
-                    git --version
+                    cmd "git --version"
                 }
             }
         }
